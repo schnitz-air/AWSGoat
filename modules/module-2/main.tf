@@ -19,7 +19,7 @@ data "aws_availability_zones" "available" {
 
 # VPC Config for public access
 resource "aws_vpc" "lab-vpc" {
-  cidr_block           = "10.0.0.0/16"
+  cidr_block           = "10.0.0.0/8"
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags = {
